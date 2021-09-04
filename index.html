@@ -8,26 +8,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>My App</title>
+    <title>Group Alarm</title>
 </head>
 
 <body>
     <header>
-        <h1>My App</h1>
-        <img src="assets/big-logo.png" />
+        <h1>Logo here</h1>
+
+        <ul>
+            <li ><a class="login" href="#">Sign Up </a>|<a class="login" href="#"> Log in</a> </li>
+            
+        </ul>
+
+        
+        <div id="dropdown">
+        <i id="dropdown-button" class="fas fa-chevron-circle-down"></i>
+            <div id="dropdown-content">
+                <ul id="dropdown-text">
+                    <li><a class="dropdown-options" href="#">Account <i class="fas fa-folder-open"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Friends <i class="fas fa-address-book"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Alarms <i class="fab fa-algolia"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Preferences <i class="fas fa-cogs"></i></a></li>
+                </ul>
+            </div>
+    </div>
     </header>
     
+    
     <main>
-
-        Make a Web App!
+        
+        <h2>Welcome to Group Alarm</h2>
+        <p>To get started, click add button below to get your first group alarm set up.</p>
+        <i id="addSign" class="fas fa-plus-circle"></i>
+        
+        <h3>Alarms</h3>
+        <div id="alarms">
+            <ul class="active-alarms">
+                <li>Alarm name:</li>
+                <li>Last Refresh:</li>
+                <li>Repeat Every:</li>
+                <li>Users:</li>
+            </ul>
+            <a href="" >Remove</a>
+        </div>
         
     </main>
 
     <footer>
-        &copy; 2021 Alchemy Code Lab
+        
     </footer>
 
     <script type="module" src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/69aedf3491.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
