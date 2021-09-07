@@ -24,3 +24,34 @@ dropdown.addEventListener('click', () => {
     }
 
 });
+
+
+// get signup form
+let body = document.getElementsByTagName('body');
+let signupLink = document.getElementById('sign-up');
+let signupForm = document.getElementById('signup-form');
+
+
+
+signupLink.addEventListener('click', () => {
+    if (signupForm.style.display === 'none' && loginForm.style.display === 'none') {
+        signupForm.style.display = 'block';
+        
+
+    } else {
+        signupForm.style.display = 'none';
+    }
+});
+
+
+// get login form
+let loginLink = document.getElementById('log-in');
+let loginForm = document.getElementById('login-form');
+
+loginLink.addEventListener('click', () => {
+    if (loginForm.style.display === 'none' && signupForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+    } else {
+        loginForm.style.display = 'none';
+    }
+});

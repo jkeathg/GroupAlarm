@@ -16,7 +16,7 @@
         <h1>Logo here</h1>
 
         <ul>
-            <li ><a class="login" href="#">Sign Up </a>|<a class="login" href="#"> Log in</a> </li>
+            <li ><a class="login" id="sign-up" href="#">Sign Up </a>|<a class="login" id="log-in" href="#"> Log in</a> </li>
             
         </ul>
 
@@ -53,7 +53,27 @@
         </div>
         
     </main>
-
+<section id="signup-form">
+    <form id="signup">
+        <h4>Name</h4>
+        <input class="signup-info" id="f-name" placeholder="First Name" type="text" >
+        <input class="signup-info" id="l-name" placeholder="Last Name" type="text" >
+        <h4>Login Info </h4>
+        <input class="signup-info" id="username" placeholder="Username" type="text" >
+        <input class="signup-info" id="email" placeholder="Email" type="text" >
+        <input class="signup-info" id="password" placeholder="password" type="text" >
+        <input class="signup-info" id="signup-submit" type="submit" value="Sign Up">
+    </form>
+</section>
+<section id="login-form">
+    <form id="login">       
+        <h4>Login Info </h4>
+        <input class="login-info" id="username" placeholder="Username" type="text" >
+        <input class="login-info" id="password" placeholder="password" type="text" >
+        <a href="#" id="forgot-password">Forgot Password?</a>
+        <input class="login-info" id="signup-submit" type="submit" value="Sign Up">
+    </form>
+</section>
     <footer>
         
     </footer>

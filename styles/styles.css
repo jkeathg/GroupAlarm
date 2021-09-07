@@ -175,6 +175,119 @@ h3 {
     width: 50vw
 }
 
+/* Start of sign up */
+
+#signup-form {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    padding: 70px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--main-purple);
+}
+h4 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.signup-info {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+    
+}
+
+#signup-submit {
+    background-color: var(--dark-blue);
+    border-color: var(--border-glow);
+    color: var(--bg-gray);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+#signup-submit:hover {
+    cursor: pointer;
+    background-color: var(--main-green);
+    color: var(--dark-blue);
+    box-shadow: 3px 3px 0 var(--main-purple);
+}
+/* end of sign up */
+#login-form {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    padding: 70px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--main-purple);
+}
+h4 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.login-info {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+    
+}
+
+#login-submit {
+    background-color: var(--dark-blue);
+    border-color: var(--border-glow);
+    color: var(--bg-gray);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+#login-submit:hover {
+    cursor: pointer;
+    background-color: var(--main-green);
+    color: var(--dark-blue);
+    box-shadow: 3px 3px 0 var(--main-purple);
+}
+
+#forgot-password {
+    text-decoration: none;
+    color: var(--bg-gray);
+    padding-left: 10px;
+}
+
+
+/* start of log in*/
+
+
+
 footer {
     background-color: #FAF0EA;
     padding: 10px;
