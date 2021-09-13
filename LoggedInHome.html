@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Group Alarm</title>
+</head>
+
+<body>
+    <header>
+        <h1>Logo here</h1>
+        <div id="user-header"> 
+
+        <ul>
+            <li class="user-header" ><a class="login" id="sign-up" href="#">J Doe </a>|<a class="login" id="log-in" href="#"> # of Alarms</a> </li>
+            
+        </ul>
+        </div>
+
+        
+        <div id="dropdown">
+        <i id="dropdown-button" class="fas fa-chevron-circle-down"></i>
+            <div id="dropdown-content">
+                <ul id="dropdown-text">
+                    <li><a class="dropdown-options" href="#">Account <i class="fas fa-folder-open"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Friends <i class="fas fa-address-book"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Alarms <i class="fab fa-algolia"></i></a></li>
+                    <li><a class="dropdown-options" href="#">Preferences <i class="fas fa-cogs"></i></a></li>
+                </ul>
+            </div>
+    </div>
+    </header>
+    
+    
+    <main>
+        <!-- Removing welcome for this page. option to add friends and alarm -->
+        <h2>Welcome to Group Alarm <style> h2 {display: none} ;</style></h2>
+        <section class="selection">
+        <div class="add-option">
+        <p>Add a friend to share an alarm with.</p>
+        <i id="friend-add" class="fas fa-plus-circle"></i>
+    </div>
+    <div class="add-option">
+        <p>Add an alarm to be reminded to do a task.</p>
+        <i id="alarm-add" class="fas fa-plus-circle"></i>
+    </div>
+</section>
+<!-- add friend form -->
+<section>
+    <section id="adding-friend">
+        
+        <form id="friend-form">
+            <h5>X</h5>
+            <h4>Adding Friend</h4>
+            <input class="add-form-info" id="n-name" placeholder="Nickname" type="text" >
+            <input class="add-form-info" id="f-name" placeholder="First Name" type="text" >
+            <input class="add-form-info" id="l-name" placeholder="Last Name" type="text" >
+            <h4>Login Info </h4>
+            <input class="add-form-info" id="add-username-email" placeholder="Username or Email of Friend" type="text" >
+            <input class="login-info" id="add-friend-submit" type="submit" value="Add Friend">
+            
+        </form>
+    </section>
+</section>
+
+
+
+
+        <h3>Active Alarms</h3>
+        <div id="alarms">
+            <ul class="active-alarms">
+                <li>Alarm name:</li>
+                <li>Last Refresh:</li>
+                <li>Repeat Every:</li>
+                <li>Users:</li>
+            </ul>
+            <a href="" >Remove</a>
+        </div>
+        
+    </main>
+<section id="signup-form">
+    <form id="signup">
+        <h5>X</h5>
+        <h4>Name</h4>
+        <input class="signup-info" id="f-name" placeholder="First Name" type="text" >
+        <input class="signup-info" id="l-name" placeholder="Last Name" type="text" >
+        <h4>Login Info </h4>
+        <input class="signup-info" id="username" placeholder="Username" type="text" >
+        <input class="signup-info" id="email" placeholder="Email" type="text" >
+        <input class="signup-info" id="password" placeholder="password" type="text" >
+        <input class="signup-info" id="signup-submit" type="submit" value="Sign Up">
+    </form>
+</section>
+<section id="login-form">
+    <form id="login">    
+        <h5>X</h5>   
+        <h4>Login Info </h4>
+        <input class="login-info" id="username" placeholder="Username" type="text" >
+        <input class="login-info" id="password" placeholder="password" type="text" >
+        <a href="#" id="forgot-password">Forgot Password?</a>
+        <input class="login-info" id="signup-submit" type="submit" value="Sign Up">
+    </form>
+</section>
+    <footer>
+        
+    </footer>
+
+    <script type="module" src="./LoggedInHome.js"></script>
+    <script src="https://kit.fontawesome.com/69aedf3491.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
