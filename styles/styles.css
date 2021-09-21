@@ -27,11 +27,19 @@ main {
     
 }
 
+.ul-user-header {
+    background-color: var(--bg-gray);
+    padding: 15px;
+    border-radius: 10px;
+    border-color: var(--dark-purple);
+}
+
 .login {
     text-decoration: none;
     color: var(--dark-purple);
     font-size: 1.2rem;
     font-weight: 900;
+    
     
 }
 
@@ -366,7 +374,66 @@ h4 {
 
 /* end of add friend */
 
+/* Start of adding alarm */
+#adding-alarm {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 25vw;
+}
 
+
+
+#alarm-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    margin: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--main-purple);
+}
+h4 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.add-form-info {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+    
+}
+
+#add-friend-submit {
+    background-color: var(--dark-blue);
+    border-color: var(--border-glow);
+    color: var(--bg-gray);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+#add-friend-submit:hover {
+    cursor: pointer;
+    background-color: var(--main-green);
+    color: var(--dark-blue);
+    box-shadow: 3px 3px 0 var(--main-purple);
+}
+
+#forgot-password {
+    text-decoration: none;
+    color: var(--bg-gray);
+    padding-left: 10px;
+}
 
 
 /* closing windows */

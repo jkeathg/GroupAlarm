@@ -63,9 +63,35 @@ let addFriendLink = document.getElementById('friend-add');
 let addFriendForm = document.getElementById('adding-friend');
 
 addFriendLink.addEventListener('click', () => {
-    if (addFriendForm.style.display === 'none') {
+    if (addFriendForm.style.display === 'none' || addAlarmForm.style.display === 'none') {
         addFriendForm.style.display = 'block';
     } else {
         addFriendForm.style.display = 'none';
     }
+});
+
+// get add alarm
+
+let addAlarmLink = document.getElementById('alarm-add');
+let addAlarmForm = document.getElementById('adding-alarm');
+
+addAlarmLink.addEventListener('click', () => {
+    if (addAlarmForm.style.display === 'none' || addFriendForm.style.display === 'none') {
+        addAlarmForm.style.display = 'block';
+    } else {
+        addAlarmForm.style.display = 'none';
+    }
+});
+
+
+// h5 closing forms
+
+let closeForm = document.getElementById('close');
+
+
+
+closeForm.addEventListener('click', () => {
+    
+    addAlarmForm.style.display = 'none';
+    
 });

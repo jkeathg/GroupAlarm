@@ -16,8 +16,8 @@
         <h1>Logo here</h1>
         <div id="user-header"> 
 
-        <ul>
-            <li class="user-header" ><a class="login" id="sign-up" href="#">J Doe </a>|<a class="login" id="log-in" href="#"> # of Alarms</a> </li>
+        <ul class="ul-user-header">
+            <li class="user-header" ><a class="login" id="sign-up" href="#">J Doe</a> | <a class="login" id="log-in" href="#"> # of Alarms</a> </li>
             
         </ul>
         </div>
@@ -52,10 +52,10 @@
 </section>
 <!-- add friend form -->
 <section>
-    <section id="adding-friend">
+    <section id="adding-friend" style="display: none;">
         
         <form id="friend-form">
-            <h5>X</h5>
+            <h5 id="close">X</h5>
             <h4>Adding Friend</h4>
             <input class="add-form-info" id="n-name" placeholder="Nickname" type="text" >
             <input class="add-form-info" id="f-name" placeholder="First Name" type="text" >
@@ -66,6 +66,19 @@
             
         </form>
     </section>
+    <section id="adding-alarm" style="display: none;">
+        <form id="alarm-form">
+        <h5 id="close">X</h5>
+        <h4>Adding Alarm</h4>
+        <input class="add-form-info" id="n-name" placeholder="Nickname" type="text" >
+        <input class="add-form-info" id="f-name" placeholder="First Name" type="text" >
+        <input class="add-form-info" id="l-name" placeholder="Last Name" type="text" >
+        <h4>Login Info </h4>
+        <input class="add-form-info" id="add-username-email" placeholder="Username or Email of Friend" type="text" >
+        <input class="login-info" id="add-alarm-submit" type="submit" value="Add Alarm">
+        
+    </form>
+</section>
 </section>
 
 
@@ -112,6 +125,8 @@
 
     <script type="module" src="./LoggedInHome.js"></script>
     <script src="https://kit.fontawesome.com/69aedf3491.js" crossorigin="anonymous"></script>
+    
+    
 </body>
 
 </html>
