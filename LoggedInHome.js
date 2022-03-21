@@ -11,12 +11,12 @@
 
 
 // nav dropdown
-let dropdown = document.getElementById('dropdown');
-let dropdownContent = document.getElementById('dropdown-content');
+const dropDownAct = document.getElementById('dropdown');
+const dropdownContent = document.getElementById('dropdown-content');
 
 
 // on click show drop down
-dropdown.addEventListener('click', () => {
+dropDownAct.addEventListener('click', () => {
     if (dropdownContent.style.display === 'none'){
         dropdownContent.style.display = 'block';
     } else {
@@ -59,11 +59,12 @@ dropdown.addEventListener('click', () => {
 
 // get add form
 
-let addFriendLink = document.getElementById('friend-add');
-let addFriendForm = document.getElementById('adding-friend');
+
+const addFriendLink = document.getElementById('friend-add');
+const addFriendForm = document.getElementById('adding-friend');
 
 addFriendLink.addEventListener('click', () => {
-    if (addFriendForm.style.display === 'none' || addAlarmForm.style.display === 'none') {
+    if (addFriendForm.style.display === 'none') {
         addFriendForm.style.display = 'block';
     } else {
         addFriendForm.style.display = 'none';
@@ -72,26 +73,34 @@ addFriendLink.addEventListener('click', () => {
 
 // get add alarm
 
-let addAlarmLink = document.getElementById('alarm-add');
-let addAlarmForm = document.getElementById('adding-alarm');
+const addAlarmLink = document.getElementById('alarm-add');
+const addAlarmForm = document.getElementById('adding-alarm');
 
 addAlarmLink.addEventListener('click', () => {
-    if (addAlarmForm.style.display === 'none' || addFriendForm.style.display === 'none') {
+    
+    if (addAlarmForm.style.display === 'none') {
         addAlarmForm.style.display = 'block';
     } else {
         addAlarmForm.style.display = 'none';
     }
+    
 });
 
 
 // h5 closing forms
 
-let closeForm = document.getElementById('close');
+const closeFriendForm = document.getElementById('closeFriend');
+const closeAlarmForm = document.getElementById('closeAlarm');
+
+
+closeFriendForm.addEventListener('click', () => {
+    
+    addFriendForm.style.display = 'none';
+});
 
 
 
-closeForm.addEventListener('click', () => {
+closeAlarmForm.addEventListener('click', () => {
     
     addAlarmForm.style.display = 'none';
-    
 });
